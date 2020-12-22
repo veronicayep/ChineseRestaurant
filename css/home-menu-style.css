@@ -1,0 +1,182 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+/* -------------------------------------------------nav------------------------------------------------------------- */
+nav{
+    overflow:hidden;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+nav ul{
+    margin:0;   /* Remove default margin of unordered list*/  
+    padding:0;  /* Remove default padding of unordered list*/
+    text-align: center;
+}
+nav li{
+    list-style-type: none;  /* Remove bullet points*/
+    display:inline-block; /*Inline allow the block place next to each other*/
+}
+nav a, nav button{
+    padding:20px;   /*Increase the clickable area of a link*/
+    margin:0;   /* Remove default margin*/
+    text-decoration: none;  /*remove underline*/
+    display:block;      /*The whole link area is clickable, not just the text.*/
+    color:black;
+}
+
+a:hover, .dropdown:hover{
+    background-color: lightgrey;
+    color:black;
+    text-decoration: none;
+}
+.dropdown-bar .dropbutton, .snipcart-checkout, nav li {
+    font-size: 20px;  
+    border: none;    /*remove the border of button to match the rest of the link*/  
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content{
+    display:none;   /* Hide dropdown content by default */
+    position:absolute;  /* Position to the nearest positioned ancestor */
+    z-index:1;  /* It will place infront of the other content */
+    background-color: white;
+}
+
+.dropdown-content a{
+    display:block;  /*dropdown content display in block (vertical)*/
+}
+
+/* Display dropdown content when the mouse hover on dropdown button */
+.dropdown-bar:hover .dropdown-content{
+    display:block;  
+}
+/*-----------------------------------------------Homepage-----------------------------------------------------------*/
+
+.bg-container{
+	background-image: url("../image/IMG_E8710.JPG");    /*route to image location*/
+    min-height:600px;
+    position:relative;	/*element is relative to itself (its normal position)*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /*fixed = parallax scroll=normal*/
+}
+
+.txt1-center-container{
+    position:absolute;
+    top:35%;
+    width:100%;
+    color:white;
+    text-align: center;
+    font-size: 2vmax;
+    text-shadow: 5px 5px 10px black;
+}
+.home-main-container nav{
+    overflow:hidden;
+    margin-bottom: 15%; /* To prevent drop-down list being blocked*/ 
+    
+}
+.home-main-container nav ul{
+    margin:0;   /* Remove default margin of unordered list*/  
+    padding:0;  /* Remove default padding of unordered list*/
+    text-align: center;
+}
+.home-main-container nav li{
+    list-style-type: none;  /* Remove bullet points*/
+    display:inline-block; /*Inline allow the block place next to each other*/
+}
+.home-main-container nav a, .home-main-container nav button{
+    padding:20px;   /*Increase the clickable area of a link*/
+    margin:0;   /* Remove default margin*/
+    text-decoration: none;  /*remove underline*/
+    display:block;      /*The whole link area is clickable, not just the text.*/
+    color:black;
+}
+
+/* ----------------------------------------------Eat-out Content----------------------------------------------------- */
+
+.content{
+    border: 1px;
+    margin: 0 10% 0 10%;
+    color:black;
+    padding-bottom:40px;
+    display:flex;   /* Prevent child conatiner from overflowing*/
+}
+.tab-content h3,#curry p{
+    display: inline;
+}
+.tab-pane{
+    margin-top:50px;
+}
+.allergy-icon{
+    position:relative;  /* relative position gives control to absolutely position child element*/
+    display: inline-block;
+    margin-left: 20px;
+}
+.allergy-icon p{
+    position:absolute;    
+    left:40%;
+}
+.allergy-icon i{
+    position:absolute;
+    left:20%;
+    top:70px;
+    font-size: 10px;   
+}
+/* -------------------------------------------------Dine-in Content---------------------------------------------------- */
+.dine-in-menu{
+    margin-left: 15%;
+    margin-top: 10%;
+    display: flex;
+}
+
+.menu-1, .menu-2, .menu-3 {
+    border: 1px solid black;
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    overflow: auto;
+    transition: all 1s;
+    display:inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+.menu-1 p, .menu-2 p, .menu-3 p {
+    margin-top:50%;
+}
+
+.menu-1:hover, .menu-2:hover, .menu-3:hover  {
+    background-color: darkred;
+    width: 300px;
+    height: 410px;
+    padding: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menu-images{
+    display:block;
+    position:absolute;
+    overflow: hidden;
+    width:800px;
+    margin-left: 20%;
+}
+.menu-images img{
+    max-width: 100%; 
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.img1, .img2,.img3{
+    display:none;
+}
+
+/* ------------------------------------------------------footer-------------------------------------------------- */
+footer{
+    overflow:hidden;
+    background-color: pink;
+}
+

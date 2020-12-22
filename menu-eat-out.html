@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Dragon Boat | Eat-out Menu</title>
+    <link rel="stylesheet" href="css/home-menu-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css" /> <!-- snipcart API-->
+</head>
+
+<body>
+    <!-- The whole page -->
+    <div class="main-container">
+         <!--------------------------------------- nav ------------------------------------------------------------------>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <div class="dropdown-bar">
+                        <div class="dropdown-menues">
+                            <button class="dropbutton">Menu
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="menu-dine-in.html">Dine-in</a>
+                            <a href="menu-eat-out.html">Eat-out</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-bar">
+                        <div class="dropdown-restaurant">
+                            <button class="dropbutton">Restaurant
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="reservation.html">Reservation</a>
+                            <a href="reservation.html">About us</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li>
+                    <button class="snipcart-checkout"><i class="fa fa-shopping-cart"></i></button>
+                </li>
+                <li>
+                    <span class="snipcart-total-price">€0.00</span>
+                </li>
+                <li>
+                    <span>(</span>
+                    <span class="snipcart-items-count">0</span>
+                    <span>)</span>
+                </li>
+            </ul>
+        </nav>
+         <!--------------------------------------- Content ------------------------------------------------------------------>
+        <div class="content"> 
+            <div class="container">
+                <ul class="nav nav-pills">
+                  <li class="active"><a data-toggle="pill" href="#starter">Starter</a></li>
+                  <li><a data-toggle="pill" href="#curry">Curry</a></li>
+                  <li><a data-toggle="pill" href="#sweetNsour">Sweet & Sour</a></li>
+                  <li><a data-toggle="pill" href="#chefspecial">Cheft Speciality</a></li>
+                  <li><a data-toggle="pill" href="#mixNmatch">Mix & Match</a></li>
+                  <li><a data-toggle="pill" href="#noodleNfriedrice">Noodle & Fried Rice</a></li>
+                  <li><a data-toggle="pill" href="#european">European</a></li>
+                  <li><a data-toggle="pill" href="#extra">Extra Portion</a></li>
+                  <li><a data-toggle="pill" href="#drinks">Drinks</a></li>
+                </ul>
+                <i>Allergens list:</i><br><br>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/wheat_amber_50x50.jpg">
+                    <p>1</p>
+                    <i class="icon-caption">Gluten</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/crustacena_amber_50x50.jpg">
+                    <p>2</p>
+                    <i style="left:-5px;">Crustaceans</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/eggs_amber_50x50.jpg">
+                    <p>3</p>
+                    <i>Eggs</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/fish_amber_50x50.jpg">
+                    <p>4</p>
+                    <i>Fish</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/peanut_amber_50x50.jpg">
+                    <p>5</p>
+                    <i>Peanuts</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/soya_amber_50x50.jpg">
+                    <p>6</p>
+                    <i>Soya</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/milk_amber_50x50.jpg">
+                    <p>7</p>
+                    <i>Milk</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/treenut_amber_50x50.jpg">
+                    <p>8</p>
+                    <i>Nuts</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/celery_amber_50x50.jpg">
+                    <p>9</p>
+                    <i>Celery</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/mustard_amber_50x50.jpg">
+                    <p>10</p>
+                    <i>Mustard</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/sesame_amber_50x50.jpg">
+                    <p>11</p>
+                    <i>Sesame</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/su;phurdioxide_amber_50x50.jpg">
+                    <p>12</p>
+                    <i>Sulphur Dioxide</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/lupin_amber_50x50.jpg">
+                    <p>13</p>
+                    <i>Lupin</i>
+                </div>
+                <div class="allergy-icon">
+                    <img src="image/Allergy-icon/molluscs_amber_50x50.jpg">
+                    <p>14</p>
+                    <i>Molluscs</i>
+                </div>
+   
+                <div class="tab-content">
+                    <div id="starter" class="tab-pane fade in active">
+                        <table>
+                            <colgroup>
+                                <col span="2" style="width: 30%;">
+                                <col span="1" style="width: 10%;">
+                                <col span="1" style="width: 10%;">
+                                <col span="1" style="width: 20%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><h3>Starter</h3></td>
+                                </tr>
+                                <tr>
+                                    <td>A.	Chicken & Sweet Corn Soup </td>
+                                    <td>(3, 11)</td>
+                                    <td>€3.50</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="A" data-item-price="3.50" data-item-url="/"data-item-name="Chicken & Sweet Corn Soup">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>B.	Crab Meat & Sweet Corn Soup </td>
+                                    <td>(2, 3, 11)</td>
+                                    <td>€3.80</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="B" data-item-price="3.80" data-item-url="/"data-item-name="Crab Meat & Sweet Corn Soup">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>C.	Peking Hot & Sour Soup  🔥</td>
+                                    <td>(2,3,6,11)</td>
+                                    <td>€3.80</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="C" data-item-price="3.80" data-item-url="/"data-item-name="Peking Hot & Sour Soup">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>D.	Chicken & Mushroom Soup </td>
+                                    <td>(6,11)</td>
+                                    <td>€3.50</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="D" data-item-price="3.50" data-item-url="/"data-item-name="Chicken & Mushroom Soup">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>E.	Chicken & Noodle Soup</td>
+                                    <td>(1,6,11)</td>
+                                    <td>€3.50</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="E" data-item-price="3.50" data-item-url="/"data-item-name="Chicken & Noodle Soup">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>F.	Won Ton Soup </td>
+                                    <td>(1,2,3,6,11)</td>
+                                    <td>€4.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="F" data-item-price="4.00" data-item-url="/"data-item-name="Won Ton Soup">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>G.	Tom Yum Soup 🔥</td>
+                                    <td>(2,6,11)</td>
+                                    <td>€4.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="G" data-item-price="4.00" data-item-url="/"data-item-name="Tom Yum Soup">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>H.	Crispy Pancake Rolls (2) </td>
+                                    <td>(1,2,6,11)</td>
+                                    <td>€3.50</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="H" data-item-price="3.50" data-item-url="/"data-item-name="Crispy Pancake Rolls (2)">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>I.	Vegetarian Pancake Rolls (2) </td>
+                                    <td>(1,6,11)</td>
+                                    <td>€3.50</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="I" data-item-price="3.50" data-item-url="/"data-item-name="Vegetarian Pancake Rolls (2)">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>J.	Prawn Crackers </td>
+                                    <td>(1,2,6)</td>
+                                    <td>€2.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="J" data-item-price="2.00" data-item-url="/"data-item-name="Prawn Crackers">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>K.	Barbecued Spare Ribs </td>
+                                    <td>(6,11)</td>
+                                    <td>€6.20</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="K" data-item-price="6.20" data-item-url="/"data-item-name="Barbecued Spare Ribs">Add to cart</button></td>
+                                </tr>
+                                <tr><td style="color:darkred;">&nbsp;&nbsp;&nbsp;(Choice of BBQ, King Do, Sweet & Sour or Honey sauce)</td></tr>
+                                <tr>
+                                    <td>L.	Baked Ribs with Garlic, Chilli & Salt 🔥</td>
+                                    <td>(3,6,11)</td>
+                                    <td>€6.20</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="L" data-item-price="6.20" data-item-url="/"data-item-name="Baked Ribs with Garlic, Chilli & Salt">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>M.	Sesame Prawn Toast </td>
+                                    <td>(1,2,6,11)</td>
+                                    <td>€5.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="M" data-item-price="5.00" data-item-url="/"data-item-name="Sesame Prawn Toast">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>N.	Crispy Won Ton with Sweet & Sour Sauce </td>
+                                    <td>(1,2,6,11)</td>
+                                    <td>€4.60</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="N" data-item-price="4.60" data-item-url="/"data-item-name="Crispy Won Ton with Sweet & Sour Sauce">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>O.	Chicken Balls (6) </td>
+                                    <td>(1,6,11)</td>
+                                    <td>€4.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="O" data-item-price="4.00" data-item-url="/"data-item-name="Chicken Balls (6)">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>P.	Chicken Samosa </td>
+                                    <td>(1,3,6,11)</td>
+                                    <td>€4.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="P" data-item-price="4.00" data-item-url="/"data-item-name="Chicken Samosa">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Q.	Chicken Cheese Rolls (6) </td>
+                                    <td>(1,6,7,11)</td>
+                                    <td>€4.90</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="Q" data-item-price="4.90" data-item-url="/"data-item-name="Chicken Cheese Rolls (6)">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>R.	Skewered Chicken with Satay Sauce 🔥</td>
+                                    <td>(1,3,5,6,11)</td>
+                                    <td>€5.50</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="R" data-item-price="5.50" data-item-url="/"data-item-name="Skewered Chicken with Satay Sauce">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>S.	King Prawns with Garlic, Chilli & Salt 🔥</td>
+                                    <td>(2,3,6,11)</td>
+                                    <td>€6.30</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="S" data-item-price="6.30" data-item-url="/"data-item-name="King Prawns with Garlic, Chilli & Salt">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>T.	Shredded Chicken with Garlic, Chilli & Salt 🔥</td>
+                                    <td>(3,6,11)</td>
+                                    <td>€5.80</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="T" data-item-price="5.80" data-item-url="/"data-item-name="Shredded Chicken with Garlic, Chilli & Salt">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>U.	Thai Chicken Wings </td>
+                                    <td>(3,6,11,14)</td>
+                                    <td>€4.50</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="U" data-item-price="4.50" data-item-url="/"data-item-name="Thai Chicken Wings">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td>V.	Yuk Sung for 2 People </td>
+                                    <td>(6,11,14)</td>
+                                    <td>€10.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="V" data-item-price="10.00" data-item-url="/"data-item-name="Yuk Sung for 2 People">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:darkred;">&nbsp;&nbsp;&nbsp;(Mince pork & crispy rice noodle served with fresh lettuce)</td>
+                                </tr>
+                                <tr>
+                                    <td>W.	Chicken Sung for 2 People </td>
+                                    <td>(6,11,14)</td>
+                                    <td>€10.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="W" data-item-price="10.00" data-item-url="/"data-item-name="Chicken Sung for 2 People">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:darkred;">&nbsp;&nbsp;&nbsp;(Mince chicken & crispy rice noodle served with fresh lettuce)</td>
+                                </tr>
+                                <tr>
+                                    <td>X.	Aromatic Duck for 2 People </td>
+                                    <td>(6,11)</td>
+                                    <td>€11.00</td>
+                                    <td><button class="buy-button snipcart-add-item" data-item-id="X" data-item-price="11.00" data-item-url="/"data-item-name="Aromatic Duck for 2 People">Add to cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:darkred;">&nbsp;&nbsp;&nbsp;(Served with Chinese pancakes, hoi sin sauce & shredded vegetables)</td>
+                                </tr>
+                            </tbody>                  
+                        </table>
+                    </div>
+                    <div id="curry" class="tab-pane fade">
+                        <table>
+                            <colgroup>
+                                <col span="2" style="width: 30%;">
+                                <col span="1" style="width: 10%;">
+                                <col span="1" style="width: 10%;">
+                                <col span="1" style="width: 20%;">
+                             </colgroup>
+                             
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h3>Curry</h3>
+                                        <p>🔥</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i>(Price includes Boiled Rice or Chips, Fried Rice 50c extra)</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1.	House Special Curry </td>
+                                    <td>(1,2,6)</td>
+                                    <td>€9.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="1" 
+                                        data-item-price="9.00" 
+                                        data-item-url="/"
+                                        data-item-name="House Special Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2.	King Prawns Curry </td>
+                                    <td>(1,2,6)</td>
+                                    <td>€9.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="2" 
+                                        data-item-price="9.00" 
+                                        data-item-url="/"
+                                        data-item-name="King Prawns Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3.	Beef Curry </td>
+                                    <td>(1,6)</td>
+                                    <td>€8.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="3" 
+                                        data-item-price="8.00" 
+                                        data-item-url="/"
+                                        data-item-name="Beef Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4.	Chicken Curry </td>
+                                    <td>(1,6)</td>
+                                    <td>€8.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="4" 
+                                        data-item-price="8.00" 
+                                        data-item-url="/"
+                                        data-item-name="Chicken Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.	Whole Breast Chicken Curry </td>
+                                    <td>(1,6)</td>
+                                    <td>€8.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="5" 
+                                        data-item-price="8.00" 
+                                        data-item-url="/"
+                                        data-item-name="Whole Breast Chicken Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6.	Mixed Vegetables Curry </td>
+                                    <td>(1,6)</td>
+                                    <td>€8.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="6" 
+                                        data-item-price="7.50" 
+                                        data-item-url="/"
+                                        data-item-name="Mixed Vegetables Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7.	Shrimp Curry </td>
+                                    <td>(1,2,6)</td>
+                                    <td>€8.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="7" 
+                                        data-item-price="8.00"
+                                        data-item-url="/"
+                                        data-item-name="Shrimp Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr class="blank row">
+                                    <td><br><br><br></td>
+                                </tr>
+                                <tr>
+                                    <td><h3>Thai Curry  </h3><p>🔥🔥</p></td>
+                                </tr>
+                                <tr>
+                                    <td><i>(Fillet Beef Dishes €4 extra)</i></td>
+                                </tr>
+                                <tr>
+                                    <td><i>(Price includes Boiled Rice or Chips, Fried Rice 50c extra)</i></td>
+                                </tr>
+                                <tr>
+                                    <td>8. Thai Red Curry</td>
+                                    <td>(1,6)</td>
+                                    <td>€9.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="8" 
+                                        data-item-price="9.00" 
+                                        data-item-url="/"
+                                        data-item-name="Thai Red Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9. Thai Green Curry</td>
+                                    <td>(1,6)</td>
+                                    <td>€9.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="9" 
+                                        data-item-price="9.00" 
+                                        data-item-url="/"
+                                        data-item-name="Thai Green Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10. Thai Curry with King Prawn</td>
+                                    <td>(1,2,6)</td>
+                                    <td>€10.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="10" 
+                                        data-item-price="10.00" 
+                                        data-item-url="/"
+                                        data-item-name="Thai Curry with King Prawn"
+                                        data-item-custom1-name="Sauce Option"
+                                        data-item-custom1-options="Thai Red Curry|Thai Green Curry"
+                                        data-item-custom2-name="Side"
+                                        data-item-custom2-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11. Thai Special Curry</td>
+                                    <td>(1,2,6)</td>
+                                    <td>€10.00</td>
+                                    <td><button class="buy-button snipcart-add-item" 
+                                        data-item-id="11" 
+                                        data-item-price="10.00" 
+                                        data-item-url="/"
+                                        data-item-name="Thai Special Curry"
+                                        data-item-custom1-name="Side"
+                                        data-item-custom1-options="Boiled Rice|Chips|Fried Rice +0.50 [+0.50]">Add to cart</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  <div id="sweetNsour" class="tab-pane fade">
+                      
+                      
+                        <table>
+                            <thead>
+                                <h3>Sweet & Sour</h3><br>
+                                <i>(Price includes Boiled Rice or Chips, Fried Rice 50c extra)</i>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  <div id="chefspecial" class="tab-pane fade">
+                    <h3>Cheft Speciality</h3>
+                        
+                  </div>
+                  <div id="mixNmatch" class="tab-pane fade">
+                    <h3>Mix & Match</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                  <div id="noodleNfriedrice" class="tab-pane fade">
+                    <h3>Noodle & Fried Rice</h3>
+                  </div>
+                  <div id="european" class="tab-pane fade">
+                    <h3>European</h3>
+                  </div>
+                  <div id="extra" class="tab-pane fade">
+                    <h3>Mix & Match</h3>
+                  </div>
+                  <div id="drinks" class="tab-pane fade">
+                    <h3>Soft Drinks</h3>
+                  </div>
+                  
+                </div>
+              </div>
+              
+        </div>
+    </div>  
+    <!--------------------------------------- Footer ------------------------------------------------------------------>
+    <footer class="page-footer font-small blue fixed-bottom">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://NewDragonBoat.com/"> NewDragonBoat.ie</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+
+
+    <script async src="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js"></script>
+    <div id="snipcart" data-config-modal-style="side" 
+    data-api-key="YWUzNjZjZDctM2E3Yy00MTA4LTk1MGItMWU1ZDBkOGQ0YTliNjM3NDM0Njg1MzU5NzA1NTg3" hidden
+    data-currency="eur"></div>
+</body>
+</html>

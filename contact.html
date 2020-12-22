@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Dragon Boat | Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/contactPage.js">
+    </script>
+
+</head>
+
+<body>
+    <!-- The whole page -->
+    <div id="main-container">
+          <!--------------------------------------- nav ------------------------------------------------------------------>
+         <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <div class="dropdown-bar">
+                        <div class="dropdown-menues">
+                            <button class="dropbutton">Menu
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="menu-dine-in.html">Dine-in</a>
+                            <a href="menu-eat-out.html">Eat-out</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-bar">
+                        <div class="dropdown-restaurant">
+                            <button class="dropbutton">Restaurant
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="reservation.html">Reservation</a>
+                            <a href="reservation.html">About us</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <!--------------------------------------- Content ------------------------------------------------------------------>
+
+        <div id="contact_us">
+            <h1 class="title">Contact us</h1>
+			
+            <form id="request" onsubmit="sendEmail()">
+                <div class="eMAIL bold"><p>Enter Email address :</p>
+                    <input class="nophone" type="text" id="mail">
+                </div>
+                <div class="eMAIL bold"><p>Write here:</p>
+            <textarea id="writeHere" rows='4' cols='60'>
+			</textarea>
+			
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            
+
+            <div class="subtitle bold">Opening hours </div>
+            <div class="subtitle bold">Delivery hours</div>
+            <div class="text marginR">
+                <p>Monday to Thursday- 17:00 to 23:00</p>
+                <p>Friday& Saturday- 17:00 to 00:00 midnight</p>
+                <p>Sunday - 14:00 to 23:00</p>
+                <p>Bank Holidays - 17.00 to 00:00</p>
+
+
+                <p>(Due to Covid-19, the opening hours is now from 17:00 to 23:00 everyday, until further notice)</p>
+            </div>
+
+            <div class="text">
+                <p>Monday to Sunday- 17:30 to 23:00</p>
+
+
+                <p>(Due to Covid-19, the delivery hours is now from 17:00 to 23:00 everyday, until further notice)</p>
+            </div>
+
+
+        </div>
+        <div class="map bold">Our Location</div>
+
+        <div id="maps">
+            <iframe class='mapas'
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4000.7885723926042!2d-6.671036236921843!3d53.39903068542474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48676518a8b2a17d%3A0xdf65567426b3c25b!2sNew%20Dragon%20Boat!5e0!3m2!1ses!2ses!4v1607973196188!5m2!1ses!2ses"
+                 style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class='mapas'
+                src="https://www.google.com/maps/embed?pb=!3m2!1ses!2ses!4v1607969925408!5m2!1ses!2ses!6m8!1m7!1s24iDq7DYg6OhQTogej0O6A!2m2!1d53.39889272091389!2d-6.666924408410364!3f53.997085450149825!4f1.222567513886574!5f0.7820865974627469"
+                 style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <!--------------------------------------- Footer ------------------------------------------------------------------>
+    <footer class="page-footer font-small blue fixed-bottom">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://NewDragonBoat.com/"> NewDragonBoat.ie</a>
+        </div>    
+    </footer>
+</body>
+</html>

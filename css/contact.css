@@ -1,0 +1,172 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+/* -------------------------------------------------nav------------------------------------------------------------- */
+nav{
+    overflow:hidden;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+nav ul{
+    margin:0;   /* Remove default margin of unordered list*/  
+    padding:0;  /* Remove default padding of unordered list*/
+    text-align: center;
+}
+nav li{
+    list-style-type: none;  /* Remove bullet points*/
+    display:inline-block; /*Inline allow the block place next to each other*/
+}
+nav a, nav button{
+    padding:20px;   /*Increase the clickable area of a link*/
+    margin:0;   /* Remove default margin*/
+    text-decoration: none;  /*remove underline*/
+    display:block;      /*The whole link area is clickable, not just the text.*/
+    color:black;
+}
+
+a:hover, .dropdown:hover{
+    background-color: lightgrey;
+    color:black;
+    text-decoration: none;
+}
+.dropdown-bar .dropbutton, .snipcart-checkout, nav li {
+    font-size: 20px;  
+    border: none;    /*remove the border of button to match the rest of the link*/  
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content{
+    display:none;   /* Hide dropdown content by default */
+    position:absolute;  /* Position to the nearest positioned ancestor */
+    z-index:1;  /* It will place infront of the other content */
+    background-color: white;
+}
+
+.dropdown-content a{
+    display:block;  /*dropdown content display in block (vertical)*/
+}
+
+/* Display dropdown content when the mouse hover on dropdown button */
+.dropdown-bar:hover .dropdown-content{
+    display:block;  
+}
+#main-container{
+	padding: 15px;
+}
+#nav{
+	margin: 0px;
+	padding: 10px;
+	background: pink;
+}
+.title{
+	padding-top: 10px;
+	background: white;
+	font-size:40px;
+}
+#table_home{
+	height: 50%;
+	width:100%;
+	text-align: center;
+}
+
+.home{
+	color: black;
+	box-sizing: border-box;	/* para que no se bufe un div con los padding*/
+	display: inline-block;	/* para que el div no ocupe todo el ancho de la pantalla*/
+	padding: 2px 6px 2px 2px;
+}
+.borderRight{
+	border-right: 1px solid black;
+}
+#contact_us{
+	box-sizing: border-box;
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+	width: 100%;
+	height: 70%;
+}
+.nophone{
+	width: 48%;
+}
+.eMAIL{
+	display: inline-block;
+	height: 50%;
+	width:47%;
+	float: left;
+	margin: 20px 6px 20px 10px; 
+	padding:  5px 0px 5px 0px;
+}
+#timetables{
+	border: 1px solid black;
+}
+.subtitle{
+	display: inline-block;
+	text-align: center;
+	width:48%;
+}
+.bold{
+	  font-weight: bold;
+}
+.text{
+	
+	border: 1px solid black;
+	padding: 10px 5px 10px 10px;
+	display: inline-block;
+	height: 50%;
+	width:48%;
+	float: left;
+	text-align: left
+}
+.marginR{
+	margin: 0px 20px;
+}
+
+.map{ 
+	padding: 20px 6px 30px 10px;
+	height: 100%;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+#maps{
+	text-align: center;
+
+}
+.mapas{
+	width: 50%;
+	height: 200px;
+}
+
+footer{
+	padding: 10px 5px 10px 10px;
+	text-align: center;
+background-color: pink;	
+}
+
+@media only screen and (max-width: 914px) {
+.eMAIL {
+	width:100%;
+ 	margin: 0px 30px;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+.bold {
+   color: red;
+  }
+
+}
+@media only screen and (max-width: 1031px) {
+.text{
+	border: 1px solid black;
+	padding: 10px 5px 10px 10px;
+	margin: 10px 30px;
+	height: 50%;
+	width:100%;
+	float: left;
+	text-align: left
+	 }
+}

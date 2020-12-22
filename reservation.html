@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta name="keywords" content="eat,food,local,Chinese, kilkock, Restaurant, Reservation">
+		<title>New Dragon Boat | Reservation</title>
+		
+		<!-- These reference the deployed version of JS files. All scripts were in their own folder but were moved into the same 
+		location as the html to get the functionality to work on the deployed site . -->
+		<script src ="https://student-new-dragon-boat.web.app/callFunction.js"> </script>	
+		<script src ="https://student-new-dragon-boat.web.app/moment.js"> </script>	 
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script	src="js/callFunction.js"></script>
+		<script	src="js/moment.js"></script>
+		<link rel="stylesheet" href="css/styleDavid.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		
+		<script>	   
+		   $(function() {
+
+				$("#datepicker").datepicker({
+					dateFormat: "dd-mm-yy",
+					minDate : 0,
+				}).datepicker("hide");
+
+				/* About us button*/
+				$('#showButton').click(function(){
+					$('#about').slideToggle().toggleClass('opened');
+					var isVisible = $( '#about' ).is( ".opened" );		/*Checking if the event (consumes space) is toggled*/
+					if (isVisible === true ){							/*If the event hasn't been toggle*/
+						$('.reservation-form').css('margin-top',700);	/*Increase top margin of reservation form*/
+					}
+					else {
+						$('.reservation-form').css('margin-top',100);    /*Increase top margin of reservation form*/  
+					}			 
+				});
+			});
+
+		</script>
+	</head>
+	
+	<body>
+		<!--  reservation section is in the content div below-->
+		<div class="main-container">
+			 <!-- nav -->
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li>
+						<div class="dropdown-bar">
+							<div class="dropdown-menues">
+								<button class="dropbutton">Menu
+									<i class="fa fa-caret-down"></i>
+								</button>
+							</div>
+							<div class="dropdown-content">
+								<a href="#Dine-in">Dine-in</a>
+								<a href="#Eat-out">Eat-out</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown-bar">
+							<div class="dropdown-restaurant">
+								<button class="dropbutton">Restaurant
+									<i class="fa fa-caret-down"></i>
+								</button>
+							</div>
+							<div class="dropdown-content">
+								<a href="reservation.html">Reservation</a>
+								<a href="reservation.html">About us</a>
+							</div>
+						</div>
+					</li>
+					<li><a href="home.html">Send</a></li>
+				</ul>
+			</nav>
+			 <!--  Content   -->
+			 <div class="content-container">
+				<div class="reservation-aboutus-container">
+					<div class="about-us-container"></div>
+						<div class="about-us-button">
+							<button id="showButton" >	About us </button>
+						</div>
+				
+						<div class="about-us-details" id="about">	
+				
+							<p> New Dragon Boat is located on the harbour in Kilcock, a central and lively location. It is a family run business and opened over a decade ago. <br> 
+								It strives to serve the community and also be part of the community. We use the finest of local products and are very proud to do so.  </P> 
+													
+							<img src="images/aboutUs.png" alt="Award" />							
+						</div>
+
+						<div class="reservation-form">
+							<form id="res" onsubmit="sendRes(); return false"> 	
+								<p> Fill out the form to make a provisional reservation. You will be contacted on the number you provide to confirm the exact time and number of people.  </p>			
+								<label for="datepicker">What date would you like to book</label>	<br>
+								<input type="text" id="datepicker" onchange=checkDate()> <br> <!-- helper method checkDate() validates input before submit  -->
+								
+								<label for="quantity">How many peoople:</label> 
+								<input type="number" id="quantity" name="quantity" value="1" onchange=checkNum()> <br>    <!-- helper method checkNum() validates input before submit  -->
+								
+								<label for="time">Time:</label>		
+								
+								
+								<select name="time" id="time"  >   
+									<option value="1600">4.00PM</option>
+									<option value="1630">4.30PM</option>
+									<option value="1700" >5.00PM</option>
+									<option value="1730">5.30PM</option>
+									<option value="1800">6.00PM</option>
+									<option value="1830" >6.30PM</option>
+									<option value="1900">7.00PM</option>
+									<option value="1930">7.30PM</option>
+									<option value="2000" >8.00PM</option>
+									<option value="2030">8.30PM</option>
+									<option value="2100">9.00PM</option>
+									<option value="2130" >9.300PM</option>
+									<option value="2200">10.00PM</option>
+									<option value="2230">10.30PM</option>
+								</select>	<br>
+								
+								
+								<label for="phone">Phone:</label>	
+								<input type="number" id="phone" name="phone" onchange=checkPhone()>    <br> <!-- helper method checkPhone() validates input before submit  -->
+								
+								<label for="name">Name for  booking</label>	
+								<input type="text" id="name">   <br>   <!-- Not fully required to book so not validated. A time, contact number and date are 100% needed.  -->
+								
+								<button type="submit">Reservation</button>
+																				
+							</form>
+
+						</div>
+						<!-- <form id="menu" onsubmit="sendMenu(); return false">     
+							<label for="mail">Enter your email to receive take-away brochure :</label> <br>
+							<input type="text" id="mail" >
+							<button type="submit"> Send Menu </button>				
+						</form>							 -->
+						</div>			
+					</div>
+			</div>
+			
+			
+
+			<!-- Footer -->
+			<footer class="page-footer font-small blue fixed-bottom">
+
+				<!-- Copyright -->
+				<div class="footer-copyright text-center py-3">© 2020 Copyright:
+					<a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+				</div>
+				<!-- Copyright -->
+			
+			</footer>
+			<!-- Footer -->
+
+		</div>  
+
+
+
+	</body>
+</html>

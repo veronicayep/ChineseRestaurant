@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+
+    padding-left: 0px;
+}
+
+nav{
+    overflow:hidden;
+    background-color: pink;
+}
+nav ul{
+    margin:0;   /* Remove default margin of unordered list*/  
+    padding:0;  /* Remove default padding of unordered list*/
+    text-align: center;
+}
+nav li{
+    list-style-type: none;  /* Remove bullet points*/
+    display:inline-block; /*Inline allow the block place next to each other*/
+}
+nav a, button{
+    padding:20px;   /*Increase the clickable area of a link*/
+    margin:0;   /* Remove default margin*/
+    text-decoration: none;  /*remove underline*/
+    display:block;      /*The whole link area is clickable, not just the text.*/
+    color:black;
+}
+
+a:hover, .dropdown:hover{
+    background-color: lightgrey;
+    color:black;
+    text-decoration: none;
+}
+.dropdown-bar .dropbutton, nav li {
+    font-size: 20px;  
+    border: none;    /*remove the border of button to match the rest of the link*/  
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content{
+    display:none;   /* Hide dropdown content by default */
+    position:absolute;  /* Position to the nearest positioned ancestor */
+    z-index:1;  /* It will place infront of the other content */
+}
+
+.dropdown-content a{
+    display:block;  /*dropdown content display in block (vertical)*/
+}
+
+/* Display dropdown content when the mouse hover on dropdown button */
+.dropdown-bar:hover .dropdown-content{
+    display:block;  
+}
+
+.content-container{
+    border: 1px;
+    background-color: black;
+    margin: 0 15% 0 15%;
+}
+
+footer{
+    overflow:hidden;
+    background-color: pink;
+}

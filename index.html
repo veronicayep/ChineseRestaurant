@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Dragon Boat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+
+</head>
+<body>
+    <!-- The whole page -->
+    <div class="main-container">
+         <!--------------------------------------- nav ------------------------------------------------------------------>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <div class="dropdown-bar">
+                        <div class="dropdown-menues">
+                            <button class="dropbutton">Menu
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#Dine-in">Dine-in</a>
+                            <a href="#Eat-out">Eat-out</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-bar">
+                        <div class="dropdown-restaurant">
+                            <button class="dropbutton">Restaurant
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="reservation.html">Reservation</a>  
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+         <!--------------------------------------- Content ------------------------------------------------------------------>
+        <div class="content-container">
+
+			
+            
+        </div>
+
+        <!--------------------------------------- Footer ------------------------------------------------------------------>
+        <footer class="page-footer font-small blue fixed-bottom">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        
+        </footer>
+        <!-- Footer -->
+
+    </div>  
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCB7jQ4l-ZWjdUNrqDxOCifkTyuWXpypco",
+    authDomain: "student-new-dragon-boat.firebaseapp.com",
+    projectId: "student-new-dragon-boat",
+    storageBucket: "student-new-dragon-boat.appspot.com",
+    messagingSenderId: "591607137326",
+    appId: "1:591607137326:web:3af71a3066c7a9514b4bbf"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>

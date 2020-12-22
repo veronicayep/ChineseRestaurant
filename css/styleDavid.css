@@ -1,0 +1,287 @@
+/* -------------------------------------------------nav------------------------------------------------------------- */
+nav{
+    overflow:hidden;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+nav ul{
+    margin:0;   /* Remove default margin of unordered list*/  
+    padding:0;  /* Remove default padding of unordered list*/
+    text-align: center;
+}
+nav li{
+    list-style-type: none;  /* Remove bullet points*/
+    display:inline-block; /*Inline allow the block place next to each other*/
+}
+nav a, nav button{
+    padding:20px;   /*Increase the clickable area of a link*/
+    margin:0;   /* Remove default margin*/
+    text-decoration: none;  /*remove underline*/
+    display:block;      /*The whole link area is clickable, not just the text.*/
+    color:black;
+}
+
+a:hover, .dropdown:hover{
+    background-color: lightgrey;
+    color:black;
+    text-decoration: none;
+}
+.dropdown-bar .dropbutton, .snipcart-checkout, nav li {
+    font-size: 20px;  
+    border: none;    /*remove the border of button to match the rest of the link*/  
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content{
+    display:none;   /* Hide dropdown content by default */
+    position:absolute;  /* Position to the nearest positioned ancestor */
+    z-index:1;  /* It will place infront of the other content */
+    background-color: white;
+}
+
+.dropdown-content a{
+    display:block;  /*dropdown content display in block (vertical)*/
+}
+
+/* Display dropdown content when the mouse hover on dropdown button */
+.dropdown-bar:hover .dropdown-content{
+    display:block;  
+}
+
+.reservation-aboutus-container{
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    margin-bottom: 40px;    
+}
+.about-us-container{
+    position:absolute;
+    display:flex;
+    flex-direction: column; 
+}
+.about-us-button{
+    position:absolute;
+    top:2em;
+    left:45%;   /* centered button */
+}
+.about-us-details{
+    position:absolute;
+    top:5em;
+    text-align: center;
+}
+.about-us-details img{
+    height:500px;
+}
+.reservation-form{
+    margin-top:100px;
+    display: block;
+    border-top: 1px solid #ccc; /* use top border as a division line between about us and reservation form*/
+    transition:0.5s;
+}
+.reservation-form h2{
+    text-align: center;
+}
+.data-picker-input{
+    height:300px;
+}
+
+#res{	
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 6%;
+}
+#menu{
+	float:left;
+    margin-top: 20px;
+    margin-left: 20%;
+	border: 5px 	
+}
+
+.about-us-details {	
+    display:none;  
+}
+
+
+#showButton {
+    cursor:pointer; 
+}
+
+label {
+	 font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p {
+	 font-family: "Lucida Console", "Courier New", monospace;
+}
+
+footer{
+    overflow:hidden;
+    background-color: pink;
+}
+
+#div-slidedown{
+	display:none;
+}
+
+button {    
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #E52074;
+        text-align: center;
+        font-size: 28px;
+        padding: 5px;
+        width: 110px;
+        cursor: pointer;
+}
+	  
+input {
+	background: #efe1f2;	
+}
+
+select {
+	background: #efe1f2;	
+}
+
+#quantity {
+	float: right;	
+}
+
+#phone {
+	float: right;	
+}
+
+#name {
+	float: right;	
+}
+
+#time {
+	float: right;	
+}
+	  
+	  
+/* https://stackoverflow.com/questions/25474378/how-to-style-jquery-datepicker-calendar  used to style the calendar*/	  
+
+.ui-datepicker {
+    width: 300px;
+    height: 300px;
+    margin: 5px auto 0;
+    font: 12pt Arial, sans-serif;
+    /*-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);*/
+    position: relative !important;  /*Overwrite default position*/
+    top: -560px !important;
+    left: 50px !important;
+}
+
+.ui-datepicker table {
+    width: 100%;
+}
+
+.ui-datepicker-header {
+    background: #3399ff;
+    color: #ffffff;
+    font-family:'Times New Roman';
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #111;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.ui-datepicker-prev {
+    float: left;
+    cursor: pointer;
+    background-position: center -30px;
+    color:white;
+}
+
+.ui-datepicker-next {
+    float: right;
+    cursor: pointer;
+    background-position: center 0px;
+    color:white;
+}
+
+.ui-datepicker thead {
+    background-color: #f7f7f7;
+
+    /*border-bottom: 1px solid #bbb;*/
+}
+
+.ui-datepicker th {
+    background-color:lightblue;
+    text-transform: uppercase;
+    font-size: 8pt;
+    color: #666666;
+    /*text-shadow: 1px 0px 0px #fff;*/
+    /*filter: dropshadow(color=#fff, offx=1, offy=0);*/
+}
+
+.ui-datepicker tbody td {
+    padding: 0;
+    /*border-right: 1px solid #808080;*/
+}
+
+    .ui-datepicker tbody td:last-child {
+        border-right: 0px;
+    }
+
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #bbb;
+}
+
+    .ui-datepicker tbody tr:last-child {
+        border-bottom: 0px;
+    }
+
+.ui-datepicker a {
+    text-decoration: none;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    /*font-weight: bold;*/
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    /*text-shadow: 1px 1px 0px #fff;*/
+    /*filter: dropshadow(color=#fff, offx=1, offy=1);*/
+}
+
+.ui-datepicker-calendar .ui-state-default {
+      background: linear-gradient(lightblue, rgba(0, 140, 255, 0.774));
+      color:#ffffff;
+      height:40px;
+      width:40px;
+
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+    background: darkcyan;
+    color: #FFFFFF;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background: #33adff;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    color: #e0e0e0;
+    text-shadow: 0px 1px 0px #4d7a85;
+    border: 1px solid #55838f;
+    position: relative;
+    margin: -1px;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+    background: darkgray;
+    color: #000;
+}
