@@ -50,6 +50,8 @@ a:hover, .dropdown:hover{
     display:block;  
 }
 
+/*-------------------------------------------content--------------------------------------------*/
+
 .reservation-aboutus-container{
     display:flex;
     position:relative;
@@ -69,6 +71,8 @@ a:hover, .dropdown:hover{
 .about-us-details{
     position:absolute;
     top:5em;
+    margin-left: 20%;
+	margin-right: 20%;
     text-align: center;
 }
 .about-us-details img{
@@ -168,11 +172,9 @@ select {
     height: 300px;
     margin: 5px auto 0;
     font: 12pt Arial, sans-serif;
-    /*-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);*/
     position: relative !important;  /*Overwrite default position*/
-    top: -560px !important;
-    left: 50px !important;
+    top: -500px !important;
+    left: 10px !important;
 }
 
 .ui-datepicker table {

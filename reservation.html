@@ -92,15 +92,16 @@
 							<p> New Dragon Boat is located on the harbour in Kilcock, a central and lively location. It is a family run business and opened over a decade ago. <br> 
 								It strives to serve the community and also be part of the community. We use the finest of local products and are very proud to do so.  </P> 
 													
-							<img src="images/aboutUs.png" alt="Award" />							
+							<img src="image/IMG_8696.JPG" alt="AboutUs" />							
 						</div>
 
 						<div class="reservation-form">
 							<form id="res" onsubmit="sendRes(); return false"> 	
 								<p> Fill out the form to make a provisional reservation. You will be contacted on the number you provide to confirm the exact time and number of people.  </p>			
 								<label for="datepicker">What date would you like to book</label>	<br>
-								<input type="text" id="datepicker" onchange=checkDate()> <br> <!-- helper method checkDate() validates input before submit  -->
-								
+								<div class="data-picker-input">
+									<input type="text" id="datepicker" onchange=checkDate()> <br> <!-- helper method checkDate() validates input before submit  -->
+								</div>
 								<label for="quantity">How many peoople:</label> 
 								<input type="number" id="quantity" name="quantity" value="1" onchange=checkNum()> <br>    <!-- helper method checkNum() validates input before submit  -->
 								
