@@ -63,9 +63,9 @@ a:hover, .dropdown:hover{
     display:flex;
     flex-direction: column; 
 }
-.about-us-button{
+.submit-button-center{
     position:absolute;
-    top:2em;
+    margin-top:2em; 
     left:45%;   /* centered button */
 }
 .about-us-details{
@@ -130,14 +130,14 @@ footer{
 }
 
 button {    
-        border-radius: 10px;
-        border: 4px double #cccccc;
-        color: #E52074;
-        text-align: center;
-        font-size: 28px;
-        padding: 5px;
-        width: 110px;
-        cursor: pointer;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #E52074;
+    text-align: center;
+    font-size: 28px; 
+    padding: 5px;
+    /* width: 110px; */
+    cursor: pointer;
 }
 	  
 input {
